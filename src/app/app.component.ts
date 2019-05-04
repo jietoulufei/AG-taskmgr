@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  darkTheme: boolean = false;
+  switchTheme(dark) {
+    //alert(dark.checked);
+    //console.log("dart", dark)
+    this.darkTheme = dark.checked;
+  }
 }

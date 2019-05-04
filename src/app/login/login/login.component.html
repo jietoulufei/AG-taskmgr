@@ -1,0 +1,39 @@
+<form action="">
+  <md-card>
+    <md-card-header>
+      <md-card-title>登入:</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <md-input-container class="full-width">
+        <!-- <span mdPrefix>zhu</span> -->
+        <!--md-input-container floatPlaceholder="float||never" color="warn" align="end">-->
+        <input mdInput type="text" placeholder="您的email">
+        <!-- <span mdSuffix>@gmail.com</span>
+      <md-hint>必填项</md-hint> -->
+      </md-input-container>
+      <md-input-container class="full-width">
+        <input mdInput type="password" placeholder="您的密码">
+      </md-input-container>
+      <button md-raised-button type="button">登录</button>
+      <!--md-mini-fab md-button type="submit" 会提交刷新页面-->
+    </md-card-content>
+    <md-card-actions class="text-right">
+      <p>还没有账户？<a routerLink="/register">注册</a></p>
+      <p>忘记密码？<a href="">找回</a></p>
+    </md-card-actions>
+  </md-card>
+  <md-card>
+    <md-card-header>
+      <md-card-title>
+        每日佳句
+      </md-card-title>
+      <md-card-subtitle>
+        生活不止眼前的苟且，还有诗与远方的田野。
+      </md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="/assets/sland.jpg" alt="">
+    <md-card-content>
+      Life is not just the present, there are poems and distant fields.
+    </md-card-content>
+  </md-card>
+</form>
