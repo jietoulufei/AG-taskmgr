@@ -9,6 +9,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from 'app/utils/svg.util';
 import { SharedModule } from 'app/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import 'hammerjs';//兼容移动端
 @NgModule({
   imports: [
     HttpModule,
