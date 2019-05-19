@@ -24,6 +24,12 @@ main{
     flex: 1 1 auto;
 }
 
-// .demo{
-//     @import 'theme.scss';
-// }
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
