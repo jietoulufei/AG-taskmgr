@@ -14,9 +14,26 @@
     overflow-x: scroll;
 }
 
-.list-container{
-    flex: 0 0 360px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+.list-container {
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  
+.task-lists {
+height: 100%;
+overflow-x: auto;
 }
 
+.fab-button {
+position: fixed;
+right: 32px;
+bottom: 96px;
+z-index: 998;
+}
+
+:host {  //配合 动画滑动的关键类 @HostBinding
+display: flex;
+flex-direction: column;
+flex: 1
+}

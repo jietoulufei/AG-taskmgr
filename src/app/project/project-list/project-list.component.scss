@@ -4,7 +4,7 @@
     margin: 10px;
 }
 
-:host{
+:host{  //配合 动画滑动的关键类 @HostBinding
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

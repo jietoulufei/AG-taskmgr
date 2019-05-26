@@ -27,7 +27,9 @@ main{
 .square{
     width: 100px;
     height: 100px;
-    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background:radial-gradient(circle at 50% 50%, #fff 0%,orange 40%,red 100%);
     position: absolute;
     top: 50%;
     left: 50%;

@@ -11,14 +11,16 @@ import { SharedModule } from 'app/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import 'hammerjs';//兼容移动端
+import { AppRoutingModule } from 'app/app-routing.module';
 @NgModule({
   imports: [
     HttpModule,
     SharedModule,
-    BrowserAnimationsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule //动画模块建议放在最后！
   ],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent]
+  exports: [HeaderComponent, FooterComponent, SidebarComponent, AppRoutingModule]
 })
 export class CoreModule {
   constructor(

@@ -17,7 +17,8 @@ import {
   MdDatepickerModule,
   MdRadioModule,
   MdNativeDateModule,
-  MdSelectModule
+  MdSelectModule,
+  MdSidenavModule
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 //共享module
@@ -40,7 +41,8 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MdDatepickerModule,
     MdRadioModule,
     MdNativeDateModule,
-    MdSelectModule
+    MdSelectModule,
+    MdSidenavModule
   ],
   exports: [
     CommonModule,
@@ -60,7 +62,8 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MdDatepickerModule,
     MdRadioModule,
     MdNativeDateModule,
-    MdSelectModule
+    MdSelectModule,
+    MdSidenavModule
   ],
   entryComponents: [ConfirmDialogComponent],
   declarations: [ConfirmDialogComponent]
