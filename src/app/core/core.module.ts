@@ -20,7 +20,11 @@ import { AppRoutingModule } from 'app/app-routing.module';
     BrowserAnimationsModule //动画模块建议放在最后！
   ],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent, AppRoutingModule]
+  exports: [HeaderComponent, FooterComponent, SidebarComponent, AppRoutingModule],
+  providers: [
+    { provide: 'BASE_CONFIG', useValue: 'http://localhost:3000' },//默认取出的都是同一个对象实例
+    { provide: 'demo', useValue: 'helloDemo' },
+  ]
 })
 export class CoreModule {
   constructor(

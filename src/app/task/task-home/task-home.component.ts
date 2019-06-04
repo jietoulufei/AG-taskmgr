@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { MdDialog } from '@angular/material';
 import { NewTaskComponent } from '../new-task/new-task.component';
 import { CopyTaskComponent } from '../copy-task/copy-task.component';
@@ -9,10 +9,12 @@ import { slideToRight } from 'app/anims/router.amin';
   selector: 'app-task-home',
   templateUrl: './task-home.component.html',
   styleUrls: ['./task-home.component.scss'],
-  animations: [slideToRight]
-})
+  animations: [slideToRight],
+  changeDetection: ChangeDetectionStrategy.OnPush//告诉angular 无需检测我 当外部输入属性发送过来 发送变化的时候再检测
+})//changeDetection: ChangeDetectionStrategy.Default //默认 自动检测所有树(所有event timer xhr 异步事件会触发检测)
+
 export class TaskHomeComponent implements OnInit {
-  @HostBinding('@routeAnim') state: any ;
+  @HostBinding('@routeAnim') state: any;
   lists = [
     {
       id: 1,
@@ -77,7 +79,7 @@ export class TaskHomeComponent implements OnInit {
     }
   ];
 
-  constructor(private dialog: MdDialog) { }
+  constructor(private dialog: MdDialog, private cd: ChangeDetectorRef) { }
 
   ngOnInit() {
   }

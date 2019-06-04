@@ -4,15 +4,22 @@
     margin: 10px;
 }
 
-:host{  //配合 动画滑动的关键类 @HostBinding
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+// :host{  //配合 动画滑动的关键类 @HostBinding
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+// }
 
 .fab-button{
     position: fixed;
     right: 32px;
     bottom: 96px;
     z-index: 998;
+}
+
+.container{  //配合 动画滑动的关键类 @HostBinding
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
